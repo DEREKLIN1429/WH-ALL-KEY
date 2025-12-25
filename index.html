@@ -395,18 +395,20 @@
         const DEFAULT_PASSWORD = "1429"; 
         
         // 預設按鈕資料：包含英文名稱 (en) 和中文名稱 (cn)
-        // 【已修正】只保留指定的 5 個網址
+        // 【已修正】加入 "貨櫃動態管理"
         const defaultButtons = [
             { en: "Vehicle Management", cn: "車輛管理", url: "https://dereklin1429.github.io/Vehicle-Management/", icon: "fa-arrow-right" },
             { en: "WH_5S Audit", cn: "原管 5S 稽核", url: "https://dereklin1429.github.io/5S-audit-WH//", icon: "fa-arrow-circle-right" },
             { en: "Repair Record", cn: "機械維修紀錄", url: "https://dereklin1429.github.io/", icon: "fa-play" },
             { en: "Periodic Maintenance", cn: "設備保養查核", url: "https://dereklin1429.github.io/", icon: "fa-angle-double-right" },
-            { en: "RM_WH Inventory", cn: "原管庫存盤點", url: "https://chiehs1429.github.io/RM-WH-Inventory/", icon: "fa-home" }
+            { en: "RM_WH Inventory", cn: "原管庫存盤點", url: "https://chiehs1429.github.io/RM-WH-Inventory/", icon: "fa-home" },
+            // 新增的按鈕 (請記得在後台更新正確網址)
+            { en: "Container Dynamic Management", cn: "貨櫃動態管理", url: "https://copy-of-copy-of-intelligent-container-logistics-d-422314829002.us-west1.run.app", icon: "fa-truck-moving" }
         ];
 
         let appButtons = [];
-        // Local Storage Keys
-        const STORAGE_KEY = 'departmentalAppButtonsV2';
+        // Local Storage Keys (版本號更新為 V3)
+        const STORAGE_KEY = 'departmentalAppButtonsV3';
         const STORED_PASSWORD_KEY = 'settingsStoredPassword'; // 用於儲存自動登入密碼
 
         const buttonGrid = document.getElementById('button-grid');
@@ -591,8 +593,3 @@
 
 </body>
 </html>
-
-
-
-
-
