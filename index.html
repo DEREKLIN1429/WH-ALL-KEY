@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>原管應用程式網站 V2.1 (RM_WH Application Index v2.1)</title>
+    <title>原管應用程式網站 V3.0 (RM_WH Application Index v3.0)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
     <style>
@@ -331,8 +331,8 @@
     </button>
 
     <div class="header-container">
-        <h1>🏢 原管應用程式索引 V2.1</h1>
-        <div class="subheader">RW_WH Application Index v2.1</div>
+        <h1>🏢 原管應用程式索引 V3.0</h1>
+        <div class="subheader">RW_WH Application Index v3.0</div>
     </div>
 
     <div class="button-grid" id="button-grid"></div>
@@ -378,14 +378,13 @@
         const DEFAULT_PASSWORD = "1429"; 
         
         const defaultButtons = [
-            { en: "Vehicle Management", cn: "車輛管理", url: "https://dereklin1429.github.io/Vehicle-Management/", icon: "fa-arrow-right" },
-            { en: "WH_5S Audit", cn: "原管 5S 稽核", url: "https://dereklin1429.github.io/5S-audit-WH//", icon: "fa-arrow-circle-right" },
-            { en: "Repair Record", cn: "機械維修紀錄", url: "https://dereklin1429.github.io/", icon: "fa-play" },
-            { en: "Periodic Maintenance", cn: "設備保養查核", url: "https://dereklin1429.github.io/", icon: "fa-angle-double-right" },
+           { en: "Container MM Info", cn: "SU貨櫃管理資訊", url: "https://dereklin1429.github.io/Vehicle-Management/", icon: "fa-truck" },
+            { en: "RM Management", cn: "SU原管庫存管理", url: "https://dereklin1429.github.io/Warehouse-Inventory-System-V6.0/", icon: "fa-warehouse" },
+            { en: "Car Live Status", cn: "SU車輛動態管理", url: "https://dereklin1429.github.io/Intelligent-Container-Logistics-Dashboard-v6/", icon: "fa-chart-line" },
+            { en: "STD DATA", cn: "作業標準清單", url: "http://10.90.33.36:3005/", icon: "fa-clipboard-check" },
+            { en: "OG Monthly scrap", cn: "OG每月材料報廢紀錄", url: "http://10.90.33.36:3001/", icon: "fa-book" } , 
             { en: "RM_WH Inventory", cn: "原管庫存盤點", url: "https://dereklin1429.github.io/derekrmwnInventory01/", icon: "fa-home" },
-            { en: "Container Dynamic Management", cn: "貨櫃動態管理", url: "https://dereklin1429.github.io/Intelligent-Container-Logistics-Dashboard-v6/", icon: "fa-truck-moving" },
-            { en: "RM Management", cn: "原管庫存管理", url: "https://dereklin1429.github.io/Warehouse-Inventory-System-V6.0/", icon: "fa-warehouse" },
-            { en: "SPC RM Info", cn: "材料規格資訊", url: "https://dereklin1429.github.io/Spec-and-raw-material-searcher/", icon: "fa-book" }
+           { en: "OG Inventory Manager", cn: "OG 膠料半製品庫存", url: "http://10.90.33.36:5003/", icon: "fa-list-check" }
         ];
 
         let appButtons = [];
